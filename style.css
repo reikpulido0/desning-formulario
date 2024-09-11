@@ -1,0 +1,195 @@
+*{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 30px solid blue;
+
+}
+
+.wrap{
+
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+
+}
+
+.contenedorpadre{
+
+    width: 100%;
+    padding: 50px;
+
+
+}
+
+.formulario{
+
+    width: 100%;
+    margin: auto;
+
+}
+
+.controles{
+
+    position: relative;
+    margin-bottom:32px ;
+}
+
+.controles > input{
+
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid greenyellow;
+}
+
+
+.controles >input:focus {
+
+    outline: none;
+    border-bottom: 2px solid green;
+
+
+}
+ 
+.label{
+
+
+    color: rgb(12, 87, 172);
+
+}
+
+
+.controles > .label{
+
+    position: absolute;
+    top: 16px;
+    left: 0;
+    line-height: 16px;
+    margin-left:16px ;
+    -webkit-transition:all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s ;
+}
+
+.controles > .label:active {
+
+    top: -16px;
+    line-height: 12px;
+    font-size: 12px;
+    color: blueviolet;
+
+
+}
+
+.controlradio > label,.controlcheckbox > label{
+
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 3px;
+ 
+}
+
+.controlradio:hover,.controlcheckbox:hover{
+
+    background: rgb(4, 214, 251);
+
+    
+}
+
+.controlradio,.controlcheckbox{
+
+    display: inline-block;
+    position: relative;
+
+
+}
+
+.controlradio:before,.controlcheckbox:before{
+
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 16px;
+    background: none;
+    border-radius: 50%;
+    border:2px solid rgba(102, 255, 0, 0.872);
+
+}
+.controlradio > input,.controlcheckbox > input{
+
+    display: none;
+
+
+}
+
+.controlradio > input[type="radio"]:checked + label:before{
+
+display: nne;
+
+}
+
+.controlradio input[type="radio"]:checked + label{
+
+    padding: 5px 15px;
+    background:  rgba(102, 255, 0, 0.872);
+    border-radius: 3px;
+    color:blueviolet;
+   
+
+}
+
+.controlcheckbox input[type="checkbox"]:checked + label{
+
+
+    padding: 5px 15px;
+    background:  rgba(102, 255, 0, 0.872);
+    border-radius: 3px;
+    color:blueviolet;  
+
+}
+
+.boton{
+
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    border: 2px solid white;
+    color: greenyellow;
+    border-radius: 5px;
+    background: blue;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    -webkit-transition:all 0.3s;
+    -o-transition: all 0.3;
+    transition: all 0.3 ;
+
+
+}
+
+.boton:hover{
+
+    background: rgba(11, 182, 255, 0.623);
+
+}
