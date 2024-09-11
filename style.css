@@ -97,10 +97,20 @@ body{
 
 }
 
+
+.controlradio input[type="radio"],
+.controlcheckbox input[type="checkbox"]{
+
+
+display: none;
+
+}
+
 .controlradio > label,.controlcheckbox > label{
 
     display: inline-block;
     cursor: pointer;
+    position: relative;
     padding: 5px 15px 5px 51px;
     font-size: 1em;
     border-radius: 3px;
@@ -129,24 +139,19 @@ body{
     width: 17px;
     height: 17px;
     position: absolute;
-    left: 16px;
+    left: 17px;
     background: none;
     border-radius: 50%;
     border:2px solid rgba(102, 255, 0, 0.872);
 
 }
-.controlradio > input,.controlcheckbox > input{
 
-    display: none;
+.controlcheckbox > label:before{
 
-
-}
-
-.controlradio > input[type="radio"]:checked + label:before{
-
-display: nne;
+    border-radius: 3px;
 
 }
+
 
 .controlradio input[type="radio"]:checked + label{
 
