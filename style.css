@@ -155,7 +155,8 @@ display: none;
 
 .controlradio input[type="radio"]:checked + label{
 
-    padding: 5px 15px;
+    padding: 5px 30px ;
+   margin-bottom: 5px;
     background:  rgba(102, 255, 0, 0.872);
     border-radius: 3px;
     color:blueviolet;
@@ -166,10 +167,16 @@ display: none;
 .controlcheckbox input[type="checkbox"]:checked + label{
 
 
-    padding: 5px 15px;
+    padding: 5px 30px;
     background:  rgba(102, 255, 0, 0.872);
     border-radius: 3px;
     color:blueviolet;  
+
+}
+
+.controlcheckbox > input:before{
+
+    border-radius: 3px;
 
 }
 
